@@ -123,7 +123,7 @@
                     <td>$stok</td>
                     <td>
                         <a href=\"edit.php?id=$id\" class=\"action-btn edit-btn\">Edit</a>
-                        <a href=\"hapus.php?id=$id\" 
+                        <a href=\"hapus_produk.php?id_produk=$id\" 
                            class=\"action-btn delete-btn\"
                            onclick=\"return confirm('Apakah Anda yakin ingin menghapus produk ini?');\">Delete</a>
                     </td>
