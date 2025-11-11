@@ -86,12 +86,25 @@
     .delete-btn:hover {
       background-color: #c0392b;
     }
+
+    .add-btn{
+      display: inline-block;
+      margin-bottom: 15px;
+      padding: 10px 15px;
+      background-color: #2730aeff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
   </style>
 </head>
 
 <body>
 
   <h2>Daftar Produk</h2>
+
+  <a href="/form_tambah_produk.php" class="add-btn">Tambah Produk</a>
 
   <table>
     <thead>
@@ -122,7 +135,7 @@
                     <td>Rp $harga</td>
                     <td>$stok</td>
                     <td>
-                        <a href=\"edit.php?id=$id\" class=\"action-btn edit-btn\">Edit</a>
+                        <a href=\"form_update_produk.php?id=$id\" class=\"action-btn edit-btn\">Edit</a>
                         <a href=\"hapus_produk.php?id_produk=$id\" 
                            class=\"action-btn delete-btn\"
                            onclick=\"return confirm('Apakah Anda yakin ingin menghapus produk ini?');\">Delete</a>
